@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    var os = window.navigator.platform;
+    var browser = window.navigator.userAgent;
+
+    var newWindow = window.open("", "_blank");
+    newWindow.document.write("Операционная система: " + os + "<br>");
+    newWindow.document.write("Браузер: " + browser);
+
+    setTimeout(function() {
+      newWindow.close();
+    }, 5000);
+  </script>
+</body>
+</html>

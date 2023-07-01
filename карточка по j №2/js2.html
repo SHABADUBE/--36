@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Карточка по JS №2</title>
+  <style>
+    .styled-element {
+      color: red;
+      background-color: green;
+      font-weight: bold;
+      font-family: Arial;
+      font-size: 16px;
+      border: 2px solid yellow;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Получение информации о дате и размере html-документа
+      var date = new Date();
+      var size = document.documentElement.innerHTML.length;
+
+      // Вывод информации через каждые 3 секунды
+      setInterval(function() {
+        console.log('Дата: ' + date + ', Размер: ' + size);
+      }, 3000);
+
+      // Удаление элемента №2 при щелчке
+      var element2 = document.getElementById('element2');
+      element2.addEventListener('click', function() {
+        element2.parentNode.removeChild(element2);
+      });
+
+      // Применение стилей к элементу после нажатия
+      var styledElement = document.getElementById('styledElement');
+      styledElement.addEventListener('click', function() {
+        styledElement.classList.add('styled-element');
+      });
+
+      // Проверка, включены ли cookie в браузере
+      var areCookiesEnabled = navigator.cookieEnabled;
+      console.log('Cookies включены: ' + areCookiesEnabled);
+
+      // Закрытие окна браузера через 2 секунды
+      setTimeout(function() {
+        window.close();
+      }, 2000);
+    });
+  </script>
+</head>
+<body>
+  <p>Лучко Илья Геннадьевич</p>
+  <div id="element2">07.07.2004</div>
+  <img src="/Screenshot_10.png" alt="Screenshot_10.png">
+</body>
+</html>

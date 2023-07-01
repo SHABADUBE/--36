@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 55px 425px 425px 425px 55px;
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      grid-column: 1 / 6;
+      grid-row: 1;
+      background-color: lightblue;
+      text-align: center;
+      height: 50px;
+    }
+    
+    .block2 {
+      grid-column: 2;
+      grid-row: 2 / span 3;
+      background-color: lightgreen;
+      text-align: center;
+      height: 15  0px;
+    }
+    
+    .block3 {
+      grid-column: 3;
+      grid-row: 2 / span 3;
+      background-color: yellow;
+      text-align: center;
+      height: 150px;
+    }
+    
+    .block4 {
+      grid-column: 4;
+      grid-row: 2 / span 3;
+      background-color: orange;
+      text-align: center;
+      height: 150px;
+    }
+    
+    .block5 {
+      grid-column: 2;
+      grid-row: 5;
+      background-color: pink;
+      text-align: center;
+      height: 150px;
+    }
+    
+    .block6 {
+      grid-column: 3 / 4;
+      grid-row: 4 / span 2, 5 / span 3;
+      background-color: lightgray;
+      text-align: center;
+      height: 300px;
+    }
+    
+    .block7 {
+      grid-column: 4;
+      grid-row: 5;
+      background-color: purple;
+      text-align: center;
+      height: 150px;
+    }
+    
+    .block8 {
+      grid-column: 2;
+      grid-row: 6;
+      background-color: cyan;
+      text-align: center;
+      height: 150px;
+    }
+    
+    .block9 {
+      grid-column: 4;
+      grid-row: 6;
+      background-color: teal;
+      text-align: center;
+      height: 150px;
+    }
+    
+    .block10 {
+      grid-column: 2 / span 3;
+      grid-row: 8;
+      background-color: lightpink;
+      text-align: center;
+      height: 150px;
+    }
+    
+    .block11 {
+      grid-column: 2 / span 3;
+      grid-row: 9;
+      background-color: lime;
+      text-align: center;
+      height: 50px;
+    }
+
+    .footer {
+      grid-column: 1 / 6;
+      grid-row: 10;
+      background-color: lightgray;
+      text-align: center;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Блок 1 (Шапка)</div>
+    <div class="block2">Блок 2</div>
+    <div class="block3">Блок 3</div>
+    <div class="block4">Блок 4</div>
+    <div class="block5">Блок 5</div>
+    <div class="block6">Блок 6</div>
+    <div class="block7">Блок 7</div>
+    <div class="block8">Блок 8</div>
+    <div class="block9">Блок 9</div>
+    <div class="block10">Блок 10</div>
+    <div class="block11">Блок 11</div>
+    <div class="footer">Блок 12 (Подвал)</div>
+  </div>
+</body>
+</html>

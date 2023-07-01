@@ -1,0 +1,32 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 400px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 330px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 253px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 339px;
+  }
+}@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/GothamPro.zip);
+}

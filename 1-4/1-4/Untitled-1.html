@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница-визитка</title>
+</head>
+<body>
+    <header>
+        <h1>Моя страница-визитка</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#skills">Мои навыки</a></li>
+            <li><a href="#hobbies">Мои хобби</a></li>
+            <li><a href="#languages">Мои любимые ЯП и технологии</a></li>
+            <li><a href="#form">Форма обратной связи</a></li>
+            <li><a href="#login">Авторизация</a></li>
+        </ul>   
+    </nav>
+    <main>
+        <section>
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут Илья, я начинающий веб-разработчик.</p>
+            <p>Вот мое фото:</p>
+            <img src="myphoto.jpg" alt="Фото Ивана">
+            <p>А также мое видео-резюме:</p>
+            <video width="320" height="240" controls>
+                <source src="Grand Theft Auto V 2023.06.26 - 17.22.55.06.DVR.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео-тег.
+            </video>
+            <p>А еще я обожаю музыку и кино. Вот мой любимый трек:</p>
+            <audio controls>
+                <source src="liza-ginzburg_-_volny.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио-тег.
+            </audio>
+            <p>И мой любимый фильм:</p>
+            <video width="320" height="240" controls>
+                <source src="myfavouritefilm.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео-тег.
+            </video>
+        </section>
+        <section id="skills">
+            <h2>Мои навыки</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+            <p>Вот таблица, которая демонстрирует мой уровень навыков:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Навык</th>
+                        <th>Уровень владения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Продвинутый</td>
+                        <h2>Форма обратной связи</h2>
+                        <form>
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="message">Сообщение:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+                        <input type="submit" value="Отправить">
+                        </form>

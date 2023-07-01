@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    var name = "Павел";
+    var interests = "Компьютерные игры, книги";
+    var s1 = "Илья";
+    var s2 = "Компьютерные          игры            ,               книги";
+
+    var s1Length = s1.length;
+    var modifiedS2 = s2.replace(" ", "  ");
+    var modifiedS1 = s1.replace(s1, name);
+
+    document.write("Модифицированная строка S1: " + modifiedS1 + "<br>");
+    document.write("Длина строки S1: " + s1Length + "<br>");
+    document.write("Модифицированная строка S2: " + modifiedS2 + "<br>");
+
+  </script>
+</body>
+</html>

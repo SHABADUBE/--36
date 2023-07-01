@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Пример обработчика событий на JavaScript</title>
+  </head>
+  <body>
+    <button id="myButton">Нажми на меня</button>
+
+    <script>
+      // Получаем ссылку на кнопку
+      var button = document.getElementById('myButton');
+
+      // Регистрируем обработчик события "click" на кнопке
+      button.onclick = function() {
+        alert('Вы нажали на кнопку!');
+      };
+    </script>
+  </body>
+</html>
